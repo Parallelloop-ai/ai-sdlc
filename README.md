@@ -2,11 +2,12 @@
 
 State-of-the-art AI-led SDLC skills + repo AI-readiness tooling, curated and rewritten from the best published practitioner material (Karpathy's workflow notes, Superpowers, Anthropic official guidance, Compound Engineering, HumanLayer, and more — full attribution in docs/SOURCES.md). Dual-runtime: one skills tree consumed by both Claude Code and Codex.
 
-## Skills (13)
+## Skills (18)
 
-- **Readiness**: `audit-ai-readiness` (30-check scored rubric), `generate-context-files` (canonical AGENTS.md + CLAUDE.md shim, verified commands), `agentify-repo` (permissions, hooks, test lanes, CI, AI policy)
-- **SDLC**: `brainstorm-first`, `write-plan`, `execute-plan`, `tdd-loop`, `review-rubric`, `debug-systematically`, `verify-done`, `compound-learnings`, `ship-clean`
+- **Readiness**: `audit-ai-readiness` (30-check scored rubric), `generate-context-files` (canonical AGENTS.md + CLAUDE.md shim, verified commands), `agentify-repo` (permissions, hooks, test lanes, CI, AI policy), `modernize-legacy` (staged strangler-fig modernization)
+- **SDLC**: `brainstorm-first`, `write-plan`, `execute-plan`, `tdd-loop`, `review-rubric`, `debug-systematically`, `verify-done`, `compound-learnings`, `ship-clean`, `orchestrate-subagents`, `security-review` (vuln-class reference included), `babysit-pr`
 - **Principles**: `ai-led-engineering`
+- **Knowledge**: `ingest-knowledge` (external sources -> repo-contextualized notes)
 
 ## Install
 

@@ -41,3 +41,14 @@ Every skill in this plugin is REWRITTEN, not copied. This maps each source to wh
 | Simon Willison skills analysis | https://simonwillison.net/tags/skills/ | Skills-vs-MCP rationale; standardization timeline (Agent Skills → AAIF Dec-2025) | DESIGN.md rationale |
 | Anthropic official docs (memory, best-practices, skills) | https://code.claude.com/docs/en/memory | <200-line target; per-line litmus test; exclude derivable content; @AGENTS.md bridge; rules-with-paths; procedures→skills; /doctor anti-bloat | `generate-context-files`, `audit-ai-readiness`, `compound-learnings` |
 | Marmelab Agent Experience + Michael's Coding Spot + GitInject paper | https://marmelab.com/blog/2026/01/21/agent-experience.html | AI-ready repo consensus (fast selective tests, small files, grep-friendly names, E2E as docs); injection surface in repo files (arXiv 2606.09935) | `audit-ai-readiness`, `agentify-repo` |
+
+## v0.2 (2026-08-27)
+| Source | URL | What we take | Lands in |
+|---|---|---|---|
+| Superpowers subagent skills | https://github.com/obra/superpowers | dispatch/brief discipline, worktree isolation, two-stage review of returned work | `orchestrate-subagents` |
+| Anthropic security-guidance plugin | https://claude.com/plugins/security-guidance | write-time vuln-class checking on risky surfaces (measured 30-40% fewer security PR comments) | `security-review` |
+| GitInject (arXiv 2606.09935) | https://arxiv.org/abs/2606.09935 | instruction-surface injection as a first-class vuln class | `security-review` |
+| Anthropic code-modernization plugin | https://claude.com/plugins/code-modernization | assess->map->extract-rules->reimagine->transform->harden staging with per-stage gates | `modernize-legacy` |
+| Fowler strangler fig | https://martinfowler.com/bliki/StranglerFigApplication.html | incremental replacement behind seams; characterization tests | `modernize-legacy` |
+| Every compound-engineering (ce-babysit-pr, ce-resolve-pr-feedback) | https://github.com/EveryInc/compound-engineering-plugin | post-open PR lifecycle: CI watching, feedback triage bins, resolution hygiene | `babysit-pr` |
+| Karpathy nanochat read-arxiv-paper | https://github.com/karpathy/nanochat/blob/master/.claude/skills/read-arxiv-paper/SKILL.md | fetch+cache+repo-contextualized summary; knowledge accretes as files | `ingest-knowledge` |

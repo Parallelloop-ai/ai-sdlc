@@ -42,6 +42,9 @@ ai-sdlc/                          ← marketplace repo root
 **Company overlay (separate private repo)**
 - Internal-architecture overlay skills layer on top of this generic core; kept out of the public repo by design.
 
+## v0.2 additions (2026-08-27)
+orchestrate-subagents, security-review (+vuln-classes reference), modernize-legacy, babysit-pr, ingest-knowledge — from the post-v1 gap analysis: parallelism, write-time security, code-level revamp, post-open PR lifecycle, and knowledge accretion were the holes the survey showed; language-reviewer zoos, personas, and memory infrastructure remain deliberately excluded.
+
 ## Curation pipeline (per skill)
 source material → extract principles → rewrite imperative + minimal (≤200 lines/SKILL.md, supporting refs in skill dir) → `metadata.sources: [urls]` in frontmatter + entry in docs/SOURCES.md → eval on a guinea-pig repo.
 
