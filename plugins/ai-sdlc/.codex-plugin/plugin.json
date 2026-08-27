@@ -1,0 +1,29 @@
+{
+  "name": "ai-sdlc",
+  "version": "0.1.0",
+  "interface": {
+    "displayName": "AI-SDLC",
+    "shortDescription": "AI-led SDLC skills and repo AI-readiness tooling",
+    "longDescription": "Repo AI-readiness audits, CLAUDE.md/AGENTS.md generation, and curated engineering-discipline skills (planning, TDD, review, debugging) distilled from the best published practitioner material.",
+    "developerName": "Kshitij Banka",
+    "category": "Engineering",
+    "capabilities": [
+      "Read",
+      "Write"
+    ]
+  },
+  "description": "AI-led SDLC: repo AI-readiness audits, context-file generation, and curated engineering-discipline skills.",
+  "author": {
+    "name": "Kshitij Banka"
+  },
+  "license": "MIT",
+  "keywords": [
+    "sdlc",
+    "agents-md",
+    "ai-readiness",
+    "tdd",
+    "planning",
+    "review"
+  ],
+  "skills": "./skills/"
+}

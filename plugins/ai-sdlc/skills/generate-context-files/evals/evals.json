@@ -1,0 +1,21 @@
+{
+  "skill_name": "generate-context-files",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Set up proper agent context files for this repo so that Claude Code, Codex, and other coding agents all work well in it. Make sure whatever you write is actually correct for this codebase.",
+      "expected_output": "Canonical AGENTS.md (<=200 lines, verified commands, no derivable bloat) + CLAUDE.md shim via @AGENTS.md import or symlink",
+      "files": [
+        "target repo clone"
+      ],
+      "assertions": [
+        "agents-md-exists: AGENTS.md was created at the repo root as the canonical context file",
+        "claude-md-is-shim: CLAUDE.md exists and is a symlink to AGENTS.md or contains an @AGENTS.md import - NOT a divergent copy of the same content",
+        "agents-md-under-200-lines: AGENTS.md is 200 lines or fewer",
+        "documented-commands-run: every non-destructive command documented in the context file executes successfully in the repo clone (verified by running them)",
+        "no-derivable-bloat: the context file contains no directory-tree dump, no dependency list, and no file-by-file codebase description",
+        "build-gotcha-captured: the repo's non-obvious native build/compile step is surfaced as a gotcha - the trap where edited source does not take effect without a rebuild"
+      ]
+    }
+  ]
+}

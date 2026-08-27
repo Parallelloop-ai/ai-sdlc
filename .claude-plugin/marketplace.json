@@ -1,0 +1,16 @@
+{
+  "name": "ai-sdlc",
+  "owner": { "name": "Kshitij Banka" },
+  "description": "State-of-the-art AI-led SDLC skills and repo AI-readiness tooling, curated from the best published practitioner material.",
+  "plugins": [
+    {
+      "name": "ai-sdlc",
+      "source": "./plugins/ai-sdlc",
+      "description": "AI-led SDLC: repo AI-readiness audits, AGENTS.md/CLAUDE.md generation, and curated engineering-discipline skills.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "engineering",
+      "tags": ["sdlc", "claude-md", "agents-md", "ai-readiness", "workflow"]
+    }
+  ]
+}

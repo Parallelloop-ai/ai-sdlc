@@ -1,0 +1,12 @@
+{
+  "name": "ai-sdlc",
+  "interface": { "displayName": "AI-SDLC" },
+  "plugins": [
+    {
+      "name": "ai-sdlc",
+      "source": { "source": "local", "path": "./plugins/ai-sdlc" },
+      "policy": { "installation": "AVAILABLE" },
+      "category": "Engineering"
+    }
+  ]
+}
